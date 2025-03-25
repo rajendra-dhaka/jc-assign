@@ -19,13 +19,12 @@ export function ProductCard({ product }: { product: Product }) {
         </p>
       </div>
       {/* Product meta Data and Image */}
-      <div className="aspect-square relative overflow-hidden">
+      <div className="relative w-full pb-[100%]">
         <Image
           src={product.image}
           alt={product.title}
           fill
           className="object-contain p-4 transition-transform hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="p-4">
